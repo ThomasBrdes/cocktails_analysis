@@ -1,43 +1,25 @@
-# 🦅 Human-Heron Detector
+# 🍸 Cocktails Data Analysis
 
-![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-Framework-brightgreen.svg)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-Detection-red.svg)
-
-Welcome to the **Human-Heron Detector**! 
-
-This project is a real-time Human-Heron detection application powered by **YOLOv8** and a **Streamlit** interface.
-
-The streamlit app is accessible here [Humon-Heron Detector link](https://herondetectorapp-kxkhcaiot2ladzusdsnjvu.streamlit.app/).
- 
-
-## 📸 Features
-
-- **Detect Humans and Herons**: Using YOLOv8 to identify humans and herons.
-- **Webcam Integration**: Perform live detection using your device's webcam.
-
-- **Image Upload and Pre-recorded Images**: Upload custom images or choose from a gallery of pre-recorded images.
-
-- **Download Results**: Easily download the annotated images with bounding boxes.
-
-
+This project provides a comprehensive analysis of cocktail ingredients and their frequencies across various recipes. The aim is to uncover patterns, most frequent ingredients, and clustering trends in the cocktail world! 🥂
 
 ## 📁 Project Structure
-
 ```bash
-.
-├──others
-        ├── cam_inference_live.py       # Detection with Live camera
-├──model
-        ├── yolov8l.pt                  # Pytorch model of YOLOV8
-├── pre_recorded_images                 # Pre-recorded images for selection in the app
-        ├── ...
-├── image_inference.py                  # YOLOv8 inference code for detection
-├── streamlit_app.py                    # Main Streamlit application file
-├── Dockerfile
-├── requirements.txt                    # Python dependencies
-└── README.md                           # Project documentation
-```
+    ├── imgs # 📊 Generated images and plots 
+    ├── src # 🧠 Source code for data analysis 
+    ├── Cocktails_analysis.pdf # 📄 PDF report summarizing the analysis 
+    ├── cocktails_data_analysis.ipynb # 📝 Main analysis notebook 
+    ├── cocktails_data_analysis_annexes.ipynb # 📚 Supplementary notebook 
+    ├── environment.yml # ⚙️ Conda environment configuration 
+    └── README.md # 📖
+ ```
+
+## 🛠️ Requirements
+
+- Python 3.x 🐍
+- Jupyter Notebook 📒
+- Conda (for environment management) ⚙️
+
+
 ## 🚀 Quick Start
 
 Follow these instructions to get the project up and running on your local machine.
@@ -45,22 +27,22 @@ Follow these instructions to get the project up and running on your local machin
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/ThomasBrdes/Heron_Detector_streamlit.git
-cd human-heron-detector
+git clone https://github.com/ThomasBrdes/cocktails_analysis.git
+cd cocktails_analysis
 ```
 
 ### 2. Install env:
 
 ```bash
 conda env create -f environment.yml
+conda activate cocktails_analysis
 ```
 
-### 3. Run the Docker container:
+### 3. Launch Jupyter:
 
 ```bash
-docker run -p 8501:8501 human-heron-detector
+jupyter notebook
 ```
-
 
 ## 💻 Tech Stack
 
@@ -71,4 +53,4 @@ docker run -p 8501:8501 human-heron-detector
 
 ## 📚 Acknowledgements
 
-> 🔍 **Data from **: [Cocktails_data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-26/readme.md)
+> 🔍 **Data from** : [Cocktails_data_link](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-26/readme.md)
