@@ -53,4 +53,4 @@ jupyter notebook
 
 ## 📚 Acknowledgements
 
-> 🔍 **Data from** : [Cocktails_data_link](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-26/readme.md)
+🔍 **Data from** : [Cocktails_data_link](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-05-26/readme.md)
